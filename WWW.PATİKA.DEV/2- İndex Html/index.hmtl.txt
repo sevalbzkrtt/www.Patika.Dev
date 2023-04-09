@@ -1,0 +1,14 @@
+<!DOCTYPE html >
+    < html  dili =" tr " >
+        < kafa >
+          < meta  karakter kümesi =" UTF-8 " >
+          < meta  http-equiv =" X-UA Uyumlu " içerik =" IE=edge " >
+          < meta  adı =" görüntü alanı " içerik =" genişlik=cihaz genişliği, başlangıç ​​ölçeği=1.0 " >
+          < başlık > Kodluyoruz. </ başlık >
+     </ kafa >
+ < vücut >
+        < h1 > Şeval Bozkurt </ h1 >                                                       
+          <p>Merhabalar, Şeval ben 21 yaşındayım. Jr. Veri Analistiyim. </p>
+ </ vücut >
+ </html> 
+    

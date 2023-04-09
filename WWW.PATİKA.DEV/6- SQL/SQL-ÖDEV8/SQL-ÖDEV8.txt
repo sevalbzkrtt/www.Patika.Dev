@@ -1,0 +1,116 @@
+--1/ test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+   
+    CREATE TABLE employee (
+	id INTEGER,
+	name VARCHAR (50),
+	birthday DATE,
+	email VARCHAR(100)
+
+
+--2/ Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+INSERT INTO employee ('name', 'birthday', 'email')
+VALUES
+
+ (1, 'Derma', '2002-11-08', 'derma0@ugu.com');
+ (2, 'Suna', 1995-04-05, 'luna@erc.com');
+ (3, 'Ceric', '1978-01-18', 'ceric@html.com');
+ (4, 'Teddy', '1999-08-16', 'teddy@css.com');
+ (5, 'Arina', '1969-01-09', 'arina@java.com');
+ (6, 'Klina', '2021-03-21', 'klina@sql.com');
+ (7, 'Merin', '1977-11-09', 'merin@iclal.com');
+ (8, 'Deik', '2022-06-29', 'delik1@script.com');
+ (9, 'Awum', '2009-04-11', 'awum12@taxii.com');
+ (10, 'Cegu', '2012-11-07', 'cegu1233@yilmaz.com');
+ (11, 'Gora', '2000-12-21', 'gora200@goracem.com');
+ (12, 'Arog', '1981-04-10', 'arog43221@arogg.com');
+ (13, 'Berin', '2004-04-04', 'berin2001@brn0404.com');
+ (14, 'Wendey', '2023-02-23', 'wendey@canva.com');
+ (15, 'Royina', '1996-02-29', 'royinaagov@linuxgov.com');
+ (16, 'Lenov', '1997-04-18', 'lenova@len1997.com');
+ (17, 'Rana', '2003-06-19', 'rana@rn2003.com');
+ (18, 'Ariana', '2007-07-07', 'ariana89@macos.com');
+ (19, 'Tonny', '2020-09-05', 'tonny23456@tony2020.com');
+ (20, 'Eribo', '2022-07-06', 'eriboww@akisaw.com');
+ (21, 'Guan', '1999-09-28', 'guan@g56789.com');
+ (22, 'Europ', '1897-05-15', 'europ@2344567667.com');
+ (23, 'Oracle', '2022-11-12', 'oraclew3schools@orcw3.com');
+ (24, 'Wenum', '2002-07-08', 'wenum00@wenum009.com');
+ (25, 'Carmen', '2006-03-12', 'carmen@carmencat.com');
+ (26, 'Selbina', '1992-11-19', 'selbina09@slbna.com');
+ (27, 'Noart', 1999-09-09, 'noart09@noartcc.com');
+ (28, 'Rain', '2023-12-10', 'rain23@rraaiinn.com');
+ (29, 'Kristay', 1990-03-08, 'kristay@krsty78.com');
+ (30, 'Cenuw', '1987-09-22', 'cenuw221@cnw2323.com');
+ (31, 'Tesla', '2001-01-01', 'tesla@tesla2021.com');
+ (32, 'Elon', '2022-09-02', elonm@elontes.com);
+ (33, 'Messi', '1977-11-17', 'messi@messileo.com');
+ (34, 'Leonardo', '2001-06-27', leonardo@barcelona.com);
+ (35, 'Cerry', '1999-07-02', 'cerry@cerryman.com');
+ (36, 'Brith', '2023-01-08', 'brith@brithye.com');
+ (37, 'Beric', '1975-03-11', 'beric09@bercinbr.com');
+ (38, 'Cericom', '2023-03-09', 'cericomom@omomom.com');
+ (39, 'Herry', '1998-10-24', 'herryone@one01.com');
+ (40, 'Style', '1987-11-19', 'style009@style0009.com');
+ (41, 'Maritte', '1999-11-03', 'maritte@maritte.com');
+ (42, 'Sybilen', '2022-05-31', 'sybilen765432@aboww.com');
+ (43, 'Nereeen', '2023-11-23', 'nereeen@nereeen099.com');
+ (44, 'Feriton', '2023-02-26', 'feriton1234@frn.com');
+ (45, 'Fariey', '1993-05-14', 'fariey@fariey.com');
+ (46, 'Cerikun', '1994-06-15', 'cerikun765@gmun.com');
+ (47, 'Amercan', '1992-12-22', 'amercan87@amercan987.com');
+ (48, 'Rosian', '2022-11-25', 'rnosian@rosian87654.com');
+ (49, 'Aur', '2022-12-05', aurim@armınub.com);
+ (50, 'Bimmu', '2008-01-28', 'bimmu@bmiu.com');
+
+
+--3/ Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+  
+UPDATE employee
+SET name='Sevi',
+    birthday='2001-09-11',
+WHERE id=3
+RETURNING*;
+
+
+UPDATE employee
+SET name='Hira',
+    birthday='2007-03-07',
+WHERE id=7
+RETURNING*;
+
+
+UPDATE employee
+SET name='Luna',
+    birthday='1989-09-09',
+WHERE id=9
+RETURNING*;
+
+
+UPDATE employee
+SET name='Necmi',
+    birthday='1995-07-08',
+WHERE id=12
+RETURNING*;
+
+
+UPDATE employee
+SET name='Eric',
+    birthday='1978-11-02',
+WHERE id=1
+RETURNING*;
+
+
+
+--4 / Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+ 
+DELETE FROM employee
+WHERE id = 9;
+DELETE FROM employee
+WHERE name = 'Awum';
+DELETE FROM employee
+WHERE id = 3;
+DELETE FROM employee
+WHERE email= 'ceric@html.com';
+DELETE FROM employee
+WHERE id = 38;

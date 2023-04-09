@@ -1,0 +1,30 @@
+                                      Ters Matris 
+        
+ - B matrisinin A matrisiyle soldan ve sağdan çarpımları birim matris oluyorsa 
+B matrisine A matrisinin çarpmaya göre tersi'dir denilir.
+       
+                   AB = I = BA
+
+ - A matrisinin tersi A⁻¹ ile gösterilir.Buna göre yukarıdaki eşitlikler..
+                 
+                AA⁻¹ = I = A⁻¹A
+   biçimini alır.
+
+                                 Ters Matris'in bazı Özellikleri
+
+   - Bir matrisin diğer bir matrisle çarpımının sonucu birim matrisse bu matrisin tersi vardır ve çarpıldığı matristir.
+örneğin;  
+               A.X = I ise, 
+               A⁻¹ matrisnin bir tersi var ve bu tersi X matrisi.
+               A⁻¹ = X
+ 
+   - Bir A matrisinin tersi B ise B matrisinin de tersi A'dır.
+örneğin;       
+              A⁻¹ = B / B⁻¹ = A
+              (A⁻¹)⁻¹ = A
+
+   - Birim matrisin tersi vardır ve kendisidir.
+
+              I⁻¹ = I
+
+ 

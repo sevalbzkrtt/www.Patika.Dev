@@ -1,0 +1,16 @@
+Cevap3
+
+İkili Arama Ağacı / [7,5,1,8,3,6,0,9,4,2]
+
+Kök 7. sağ tarafında 8,9 sol tarafında ise 0,1,2,3,4,5,6 
+
+       
+             7
+         /     \
+       5         8 
+     /   \        \
+    1       6        9
+  /   \
+ 0     3
+     /   \         
+    2     4
